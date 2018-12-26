@@ -9,12 +9,12 @@
   <url>http://maven.apache.org</url>
   <dependencies>
   
-    <dependency>
-	    <groupId>javax.servlet</groupId>
-	    <artifactId>javax.servlet-api</artifactId>
-	    <version>3.1.0</version>
-	     <scope>provided</scope>
-	</dependency>
+   		 <dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+			<scope>provided</scope>
+		</dependency>
 	
 	<dependency>
 	    <groupId>mysql</groupId>
@@ -25,13 +25,14 @@
   <build>
     <finalName>reminder</finalName>
     <plugins>
+    
     <plugin>
-            <groupId>org.apache.tomcat.maven</groupId>
-            <artifactId>tomcat7-maven-plugin</artifactId>
-            <version>2.2</version>
+	<groupId>org.apache.tomcat.maven</groupId>
+	<artifactId>tomcat7-maven-plugin</artifactId>
+	<version>2.2</version>
              <configuration>
             	  <port>9000</port>
-        		  <!-- <url>reminder</url> -->
+        		   <url>/reminder</url>
         </configuration>
         </plugin>
     </plugins>
